@@ -1,0 +1,12 @@
+.overflow{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40vh;
+}
+
+svg{
+  display: inline-block;
+}
