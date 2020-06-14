@@ -1,12 +1,52 @@
-.overflow{
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40vh;
+
+.bubble-overflow{
+  width: 600px;
 }
 
 svg{
   display: inline-block;
+}
+
+.overflow{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(148,213,222,1) 0%, rgba(55,118,196,1) 100%);
+  position: absolute;
+  overflow: hidden;
+}
+
+
+.dark-wave{
+animation: left 6s linear infinite;
+transform: translate3d(0, 0, 0);
+}
+
+.light-wave{
+  animation: right 6s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+}
+
+.highlight{
+  opacity: 0.1;
+  animation: glow 5s linear infinite;
+}
+
+@keyframes left {
+  0% {transform: translateX(0px) translateY(10px);}
+  50%{transform: translateX(-300px) translateY(10px);}
+  100% {transform: translateX(0px) translateY(10px);}
+}
+
+@keyframes right {
+  0% {transform: translateX(-300px);}
+  50%{transform: translateX(0px);}
+  100% {transform: translateX(-300px);}
+}
+
+@keyframes glow {
+  0% {opacity: 0.1;}
+  50%{opacity: 1;}
+  100% {opacity: 0.1;}
 }
