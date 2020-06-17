@@ -56,3 +56,21 @@ transform: translateX(-950px);
   50%{opacity: 0.2;}
   100% {opacity: 0.8;}
 }
+
+@media only screen and (max-width: 600px){
+  .bubble-overflow{
+    width: 300px;
+  }
+
+  .overflow{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(5deg, rgba(218,227,229,1) 0%, rgba(215,224,227,1) 45%, rgba(112,140,172,1) 100%);
+    position: absolute;
+    overflow: hidden;
+    left: 4vw;
+    top: 10vh;
+  }
+
+}
